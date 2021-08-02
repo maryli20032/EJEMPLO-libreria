@@ -1,0 +1,28 @@
+###
+GET http://localhost:3000/api HTTP/1.1
+
+###
+POST http://localhost:3000/api HTTP/1.1
+Content-Type: application/json
+
+{
+    "TituloLibro":"otro libro",
+    "Autor": "autor del libro",
+    "Edicion": 1
+}
+
+###
+DELETE http://localhost:3000/api/2 HTTP/1.1
+
+###
+PUT  http://localhost:3000/api/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "TituloLibro":"segundo libro",
+    "Autor": "autor del libro",
+    "Edicion": 2
+}
+
+###
+GET http://localhost:3000/api/1 HTTP/1.1
